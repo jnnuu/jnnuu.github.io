@@ -48,13 +48,14 @@
     <section class="section">
       <h2>📦 qrpalaute.fi &ndash; QR Feedback System</h2>
       <p>
-        A multi-tenant web application for collecting real-world feedback using QR codes. Built for reliability and
-        simplicity. PDF Generator, users, emails.
+        A multi-tenant web app for collecting real-world feedback via QR codes. Built for reliability and simplicity
+        &ndash;
+        with PDF generation, user/tenant management, and email delivery.
       </p>
       <ul>
-        <li><strong>Frontend:</strong> Razor Pages + Bootstrap + jQuery</li>
-        <li><strong>Backend:</strong> .NET Web Application and Function Apps </li>
-        <li><strong>Infra:</strong> Bicep, Azure App Service, Azure Functions, CosmosDB, CI/CD pipelines</li>
+        <li><strong>Frontend:</strong> Razor Pages, Bootstrap, jQuery </li>
+        <li><strong>Backend:</strong> .NET Web App, Azure Functions </li>
+        <li><strong>Infra:</strong> Bicep, App Service, Function Apps, Cosmos DB, CI/CD pipelines</li>
       </ul>
       <!--
         <img src="images/qr-architecture.png" alt="QR System Architecture Diagram" class="img-fluid border my-3">
@@ -67,14 +68,13 @@
     <section class="section">
       <h2>🎧 BeatRender &ndash; DJ Mix Automation Pipeline</h2>
       <p>
-        A workflow to publish DJ mixes to YouTube. Generates a vizualizer video by combining the recorded mp3 audio
-        file and
-        its metadata with tracklist information and finally uploads it to YouTube.
+        A workflow for publishing DJ mixes to YouTube. Converts audio + metadata into visualized videos using FFmpeg and
+        tracklist files, then automates the upload to YouTube.
       </p>
       <ul>
         <li><strong>Frontend:</strong> N/A </li>
         <li><strong>Backend:</strong> .NET Function Apps, FFmpeg </li>
-        <li><strong>Infra:</strong> Azure Storage &ndash; Queue trigger, Blob Storage trigger </li>
+        <li><strong>Infra:</strong> Azure Blob Storage, Queue Triggers </li>
       </ul>
       <!--
         <img src="images/beatrender-architecture.png" alt="DJ Automation System Architecture Diagram"
@@ -88,12 +88,13 @@
     <section class="section">
       <h2>💬 Imago &ndash; Chat application featuring location-based matchmaking</h2>
       <p>
-        An application to find chats with users that are nearby, based on a distance of two postal codes (in Finland)
+        A chat prototype that connects users based on proximity (postal codes in Finland). Focused on quick matching and
+        real-time messaging using SignalR.
       </p>
       <ul>
-        <li><strong>Frontend:</strong> .NET Blazor </li>
-        <li><strong>Backend:</strong> .NET Web application, Function Apps </li>
-        <li><strong>Infra:</strong> Bicep, Azure Functions, Azure Storage, CosmosDB, CI/CD pipelines</li>
+        <li><strong>Frontend:</strong> Blazor </li>
+        <li><strong>Backend:</strong> .NET Web App, Azure Functions </li>
+        <li><strong>Infra:</strong> Bicep, Azure Storage, Cosmos DB, CI/CD</li>
       </ul>
       <!-- <img src="images/imago-architecture.png" alt="Chat System Architecture Diagram" class="img-fluid border my-3"> -->
       <p>
@@ -102,17 +103,15 @@
     </section>
 
     <section class="section">
-      <h2>🕵️‍♂️ UserSignUp &ndash; Automated User Signup Flow</h2>
+      <h2>🕵️‍♂️ UserSignUp &ndash; Automated Signup Flow</h2>
       <p>
-        An HTTP Triggered Azure Durable Function App to handle user sign-up event. Validates user
-        information, ensure businessid is valid from PRH API, and finally sends a confirmation email. The project
-        includes
-        unit and integration tests.
+        Durable Function App that handles user onboarding via HTTP trigger. Includes validation, PRH API business ID
+        check, and confirmation email. Includes full test coverage (unit + integration).
       </p>
       <ul>
         <li><strong>Frontend:</strong> N/A </li>
-        <li><strong>Backend:</strong> .NET Durable Function App (HTTP Trigger) </li>
-        <li><strong>Tech:</strong> Azure Durable Function, Azure Storage Queues</li>
+        <li><strong>Backend:</strong> .NET Durable Function </li>
+        <li><strong>Tech:</strong> Azure Durable Functions, Queues, Storage</li>
       </ul>
       <!-- <img src="images/UserSignUp-architecture.png" alt="User Sign Up System Architecture Diagram" class="img-fluid border my-3"> -->
       <p>
