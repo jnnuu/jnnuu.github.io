@@ -30,26 +30,28 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="philosophy.html">Philosophy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Pricing</a>
-                    </li>
+                <ul data-lang="en" class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="philosophy.html">Philosophy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                 </ul>
+                <ul data-lang="fi" class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="philosophy.html">Kehitysfilosofia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projektiportfolio</a></li>
+                </ul>
+                <div class="d-flex ms-auto">
+                    <button data-lang="fi" onclick="switchLang('en')" id="lang-en" class="btn btn-sm me-2"><img
+                            src="flag-gb-svgrepo-com.svg" width="30" height="30"></button>
+                    <button data-lang="en" onclick="switchLang('fi')" id="lang-fi" class="btn btn-sm me-2"><img
+                            src="flag-fi-svgrepo-com.svg" width="30" height="30"></button>
+                </div>
             </div>
         </div>
     </nav>
 
     <div class="container py-5">
-        <header class="mb-5">
+        <header data-lang="en" class="mb-5">
             <h1 class="display-4">My Philosophy</h1>
             <p class="lead">I believe the best software is invisible. It gets out of the way and just does its job. I
                 don't chase
@@ -58,7 +60,16 @@
                 at hand. Always maintainable without in-depth knowledge of a specific technology.</p>
         </header>
 
-        <section class="section">
+        <header data-lang="fi" class="mb-5">
+            <h1 class="display-4">Kehitysfilosofia</h1>
+            <p class="lead">Parhaat ohjelmistot eivät huuda huomiota. Ne vain toimivat, odotetulla tavalla, ja joka
+                kerta. En seuraa trendejä enkä tee asioista monimutkaisempia kuin ne ovat. Teen työkaluja, joilla on
+                oikeasti merkitystä elämän helpottamiseen, ja jotka kestävät käyttöä &ndash; yksinkertaisia, selkeitä ja
+                räätälöity tarkasti hoitamaan asiat kuten pitääkin.
+            </p>
+        </header>
+
+        <section data-lang="en" class="section">
             <h2>KISS Always Wins</h2>
             <p>Keep It Simple, Stupid &ndash; it’s not just a saying, it’s a strategy. Most of the value in software
                 comes
@@ -66,7 +77,15 @@
                 utility, maintainability, and speed of delivery.</p>
         </section>
 
-        <section class="section">
+        <section data-lang="fi" class="section">
+            <h2>KISS -periaate</h2>
+            <p>Keep It Simple, Stupid &ndash; se ei ole pelkkä sanonta, vaan koko tekemisen ydin. Suurin osa sovelluksen
+                arvosta muodostuu pienestä ja huolitellusti rakennetusta bisneslogiikasta. Karsin pois turhat koristeet
+                ja ylimääräisen teknisen painolastin, keskittyen vain siihen mikä on olennaista:
+                hyöty, käytettävyys, ja nopea toimitus.</p>
+        </section>
+
+        <section data-lang="en" class="section">
             <h2>Frameworkless ≠ Featureless</h2>
             <p>I use clean, minimal frontends &ndash; often just HTML, Bootstrap, and vanilla JS &ndash; because they
                 load faster,
@@ -76,14 +95,36 @@
                 truly needed.</p>
         </section>
 
-        <section class="section">
+        <section data-lang="fi" class="section">
+            <h2>Kevyt ei tarkoita rajoittunutta</h2>
+            <p>Käytän siistejä, minimalistisia ja kevyitä käyttöliittymiä &ndash; usein pelkkää HTML:ää, Bootstrapia ja
+                tavallista JavaScriptiä &ndash; koska ne latautuvat nopeammin, hajoavat harvemmin eivätkä sido
+                mihinkään.
+                Mutta se ei tarkoita, että ne olisivat rajoittuneita.
+                Rakennan täysiverisiä sovelluksia, joissa on logiikkaa, automaatiota, rajapintaintegraatioita ja
+                tunnistautumista &ndash; ilman että tarvitaan raskasta SPA-frameworkia, ellei sille oikeasti ole
+                tarvetta.</p>
+        </section>
+
+        <section data-lang="en" class="section">
             <h2>The Real World Is Messy</h2>
             <p>I’ve built tools for DJs, government agencies, customer feedback, you name it.
                 These aren’t startups with perfect data models. They’re messy, human, real-life use cases. And I love
                 that. My job is to meet reality where it lives &ndash; and build something that holds up.</p>
         </section>
 
-        <section class="section">
+        <section data-lang="fi" class="section">
+            <h2>Käytännön ongelmat – käytännön ratkaisut</h2>
+            <p>Olen rakentanut työkaluja DJ:lle, julkiselle sektorille, asiakaspalautteisiin &ndash; ja moneen muuhun.
+                Nämä eivät ole siloiteltuja startup-projekteja täydellisillä datamalleilla, vaan aitoja, ihmisten
+                käyttämiä järjestelmiä.
+                Juuri siksi ne kiinnostavat.
+                Tehtäväni on kohdata todellisuus sellaisena kuin se on &ndash; ja rakentaa tueksi ratkaisu, joka täyttää
+                tarpeen.
+            </p>
+        </section>
+
+        <section data-lang="en" class="section">
             <h2>Think First. Ship Fast.</h2>
             <p>I don’t dive into code right away. I map the process, understand the user, and define the outcome. But
                 once we’re clear &ndash; it’s go time. I work fast, deliver often, and prefer progress over perfection.
@@ -91,14 +132,32 @@
                 feedback loop is short. My commits are clean. My pipelines are automated.</p>
         </section>
 
-        <section class="section">
+        <section data-lang="fi" class="section">
+            <h2>Selkeä suunta, nopea toimitus.</h2>
+            <p>Aloitan hahmottamalla prosessin, ymmärrän käyttäjän tarpeen, määrittelen kokonaisuuden ja teen kaavion
+                pilviresursseista.
+                Kun suunta on selvä &ndash; sitten mennään. Osaan tehdä töitä rivakasti, toimitan usein ja suosin
+                etenemistä
+                täydellisyyden hiomisen sijaan.
+                Sovellus kehittyy nopeasti, commitit ovat siistejä ja julkaisuputket ovat aina automatisoituja.</p>
+        </section>
+
+        <section data-lang="en" class="section">
             <h2>Small Is Powerful</h2>
             <p>I don’t run a team. I don’t manage meetings. I just build. And that’s why my output competes with entire
                 teams. Solo delivery means less coordination, faster decisions, and more ownership. You know who’s
                 building your app? Me. And I care about the outcome.</p>
         </section>
 
-        <section class="section">
+        <section data-lang="fi" class="section">
+            <h2>Vähemmän muuttujia, enemmän tulosta</h2>
+            <p>En pyöritä tiimiä. En vedä palavereita. Minä rakennan.
+                Siksi saan aikaan enemmän &ndash; ja nopeammin &ndash; kuin moni tiimi yhdessä.
+                Yksin toimitus tarkoittaa vähemmän säätöä, nopeampia päätöksiä ja enemmän vastuuta lopputuloksesta.
+                Minulle lopputulos on oikeasti tärkeä.</p>
+        </section>
+
+        <section data-lang="en" class="section">
             <h2>Ready When You Are</h2>
             <p>I'm not a product &ndash; I’m a partner. If you have a process that needs a tool, or a team that needs
                 speed,
@@ -106,13 +165,23 @@
                 results.</p>
         </section>
 
+        <section data-lang="fi" class="section">
+            <h2>En ole tuote &ndash; olen kumppani</h2>
+            <p>Jos sinulla on prosessi, joka kaipaa työkalua, tiimi, joka tarvitsee buustia, tai työnkulku, joka kaipaa
+                tehokkuutta &ndash; jutellaan.
+                Minä kuuntelen, suunnittelen ja toteutan.
+                Ei turhaa sanahelinää. Vain toimiva lopputulos.</p>
+        </section>
+
         <section class="section">
             <div class="d-flex justify-content-center">
                 <div class="m-3">
-                    <a href="index.html" class="btn btn-outline-dark">Back to front page</a>
+                    <a href="index.html" data-lang="en" class="btn btn-outline-dark">Back to front page</a>
+                    <a href="index.html" data-lang="fi" class="btn btn-outline-dark">Takaisin etusivulle</a>
                 </div>
                 <div class="m-3">
-                    <a href="projects.html" class="btn btn-outline-dark">See my projects</a>
+                    <a href="projects.html" data-lang="en" class="btn btn-outline-dark">See my projects</a>
+                    <a href="projects.html" data-lang="fi" class="btn btn-outline-dark">Projektiportfolio</a>
                 </div>
             </div>
         </section>
@@ -120,6 +189,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
+    <script src="language.js"></script>
     </div>
 </body>
 

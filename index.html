@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -31,38 +31,52 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="philosophy.html">Philosophy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Pricing</a>
-          </li>
+        <ul data-lang="en" class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="philosophy.html">Philosophy</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
         </ul>
+        <ul data-lang="fi" class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Etusivu</a></li>
+          <li class="nav-item"><a class="nav-link" href="philosophy.html">Kehitysfilosofia</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projektiportfolio</a></li>
+        </ul>
+        <div class="d-flex ms-auto">
+          <button data-lang="fi" onclick="switchLang('en')" id="lang-en" class="btn btn-sm me-2"><img
+              src="flag-gb-svgrepo-com.svg" width="30" height="30"></button>
+          <button data-lang="en" onclick="switchLang('fi')" id="lang-fi" class="btn btn-sm me-2"><img
+              src="flag-fi-svgrepo-com.svg" width="30" height="30"></button>
+        </div>
       </div>
     </div>
   </nav>
   <div class="container py-5">
     <header class="mb-5">
       <h1 class="display-4">Jonni Uusi-Hakimo</h1>
-      <p class="lead">Full-stack developer focused on stable, no-nonsense tools for real-world needs.</p>
+      <p data-lang="en" class="lead">Full-stack developer focused on stable, no-nonsense tools for real-world needs.</p>
+      <p data-lang="fi" class="lead">Full-stack-kehittäjä, joka tekee kestäviä ja mutkattomia työkaluja oikeaan
+        käyttöön.</p>
     </header>
 
-    <section class="section" id="whoami">
+    <section data-lang="en" class="section" id="whoami">
       <h2>Who Am I</h2>
       <p>I'm an independent software developer from Finland with 3.5+ years of experience delivering production-ready
         applications for public sector and SaaS clients.
         I specialize in .NET, Azure, CI/CD pipelines, and cloud native architecture &ndash; and I build systems that
         just work.</p>
     </section>
+    <section data-lang="fi" class="section" id="whoami">
+      <h2>Kuka olen</h2>
+      <p>Olen itsenäinen ohjelmistokehittäjä, jolla on yli 3,5 vuoden kokemus valmiiden sovellusten
+        toteuttamisesta niin julkiselle sektorille kuin SaaS-yrityksillekin. Erikoisosaamistani ovat .NET, Azure,
+        pilvi-infrastruktuurin automaatio,
+        CI/CD-putket ja pilvinatiivien järjestelmien rakentaminen &ndash; teen sovelluksia, jotka kestävät käyttöä ja
+        pysyvät
+        toimintakunnossa.
+      </p>
+    </section>
 
-    <section class="section" id="service">
+    <section data-lang="en" class="section" id="service">
       <h2>The Service I Bring</h2>
       <p>
         Production-grade web applications from scratch.
@@ -72,7 +86,19 @@
         Black-on-white websites, built exactly for what you need. No extras. Just results.</p>
     </section>
 
-    <section class="section" id="delivery">
+    <section data-lang="fi" class="section" id="service">
+      <h2>Mitä teen</h2>
+      <p>
+        Toimitan räätälöityjä ja valmiita verkkosovelluksia &ndash; alusta loppuun, avaimet käteen -periaatteella.
+      </p>
+      <p>Nopeaa ja luotettavaa full-stack-kehitystä &ndash; ideasta julkaisuun.</p>
+      <p>
+        Pidän asiat yksinkertaisina, vakaina ja fiksuina. Mustavalkoiset sivustot, juuri siihen mitä oikeasti tarvitset.
+        Tarkoitukseen tehty, ei koristeeksi.
+      </p>
+    </section>
+
+    <section data-lang="en" class="section" id="delivery">
       <h2>What I Deliver</h2>
       <ul>
         <li>Full Stack web applications (frontend + backend + infra)
@@ -89,7 +115,25 @@
       </ul>
     </section>
 
-    <section class="section" id="idealproject">
+    <section data-lang="fi" class="section" id="delivery">
+      <h2>Mitä toimitan</h2>
+      <ul>
+        <li>Full Stack -verkkosovelluksia (frontend + backend + infra)
+          <ul>
+            <li>Azure App Services</li>
+            <li>Azure Functions</li>
+            <li>SQL- ja noSQL-tietokannat</li>
+            <li>Bicep Infrastructure-as-Code</li>
+            <li>DevOps: pilviautomaatio ja projektinhallinta</li>
+            <li>Usean ympäristön julkaisuputket (dev &rarr; test &rarr; prod)</li>
+          </ul>
+        </li>
+        <li><strong>End-to-end-toimitus &ndash; ideasta julkaisuun ja avaimet käteen</strong></li>
+      </ul>
+
+    </section>
+
+    <section data-lang="en" class="section" id="idealproject">
       <h2>Ideal project</h2>
       <p>
         Simple, purposeful web apps &ndash; internal tools, dashboards, admin panels, form workflows, reporting tools,
@@ -98,7 +142,18 @@
       </p>
     </section>
 
-    <section class="section" id="myadvantage">
+    <section data-lang="fi" class="section" id="idealproject">
+      <h2>Ihanteellinen projekti</h2>
+      <p>
+        Yksinkertaiset, tarkoituksenmukaiset verkkosovellukset &ndash; sisäiset työkalut, hallintapaneelit,
+        lomakeprosessit, raportointityökalut,
+        Excel-/PDF-muuntimet, QR-koodipohjaiset kenttäsovellukset tai kevyet SaaS-prototyypit.
+        Toimitusaika tyypillisesti 3–4 viikkoa, ideasta tuotantoon.
+      </p>
+
+    </section>
+
+    <section data-lang="en" class="section" id="myadvantage">
       <h2>My Advantage</h2>
       <ul>
         <li>Solo delivery
@@ -113,14 +168,36 @@
       </ul>
     </section>
 
-    <section class="section" id="comparison">
-      <h2>Compared to a Traditional Consultancy</h2>
+    <section data-lang="fi" class="section" id="myadvantage">
+      <h2>Etuni alalla</h2>
+      <ul>
+        <li>Yksin toteutettu toimitus
+          <ul>
+            <li>suora kommunikaatio</li>
+            <li>ei välikäsiä</li>
+          </ul>
+        </li>
+        <li>Selkeä arkkitehtuuri ja automaatio</li>
+        <li>Nopeat iteraatiot</li>
+        <li>Yksinkertaisempi, edullisempi ja helpompi hallita kuin ison tiimin ratkaisu</li>
+      </ul>
+    </section>
+
+    <section data-lang="en" class="section" id="comparison">
+      <h2>Compared to a Traditional Consultancy...</h2>
       <p><strong>Consultancy</strong>: 2-3 people, 6-8 weeks, 25-60k+ €</p>
       <p><strong>Me</strong>: Solo, 3 weeks, negotiable, 3-13k € (fixed or milestone based)</p>
       <p>Same outcome. Less friction. More speed.</p>
     </section>
 
-    <section class="section" id="whyme">
+    <section data-lang="fi" class="section" id="comparison">
+      <h2>Verrattuna tavanomaiseen konsulttitaloon...</h2>
+      <p><strong>Konsulttitalo</strong>: 2-3 hengen tiimi, 6-8 viikkoa, 25-60k+ €</p>
+      <p><strong>Minä</strong>: Yksi kehittäjä, 3-4 viikkoa, 3-13k € (kiinteä tai vaiheittainen hinnoittelu)</p>
+      <p>Sama lopputulos. Vähemmän muuttujia. Enemmän nopeutta.</p>
+    </section>
+
+    <section data-lang="en" class="section" id="whyme">
       <h2>Why clients choose me</h2>
       <ul>
         <li>You want things done fast &ndash; and done right</li>
@@ -130,8 +207,18 @@
       </ul>
     </section>
 
+    <section data-lang="fi" class="section" id="whyme">
+      <h2>Miksi asiakkaat päätyvät minuun</h2>
+      <ul>
+        <li>Haluat asioita valmiiksi nopeasti &ndash; laadusta tinkimättä</li>
+        <li>Et halua kokonaista kehitystiimiä</li>
+        <li>Haluat välttää liian monimutkaisia ratkaisuja yksinkertaisiin ongelmiin</li>
+        <li>Haluat toimivan sovelluksen viikoissa, etkä kuukausissa</li>
+      </ul>
+    </section>
 
-    <section class="section" id="contact">
+
+    <section data-lang="en" class="section" id="contact">
       <h2>Let's begin our journey</h2>
       <p>Let's talk about your use case &ndash; and I'll tell you in a single call what I can deliver, how long it'll
         take, and
@@ -141,8 +228,17 @@
       <p>📬 jonni@qrpalaute.fi</p>
     </section>
 
+    <section data-lang="fi" class="section" id="contact">
+      <h2>Katsotaan yhdessä mitä voin tarjota</h2>
+      <p>Kerro lisätietoja tarpeestasi &ndash; käydään yhdessä puhelussa läpi mitä voin toimittaa, kuinka kauan siinä
+        kestää, ja mitä se maksaa. Ei jaarittelua, ei hässäkkää.</p>
+      <p>💼 <a href="https://www.linkedin.com/in/jonniuus" target="_blank">LinkedIn</a></p>
+      <p>📬 jonni@qrpalaute.fi</p>
+    </section>
+
     <section class="section" id="certifications">
-      <h2>Certifications</h2>
+      <h2 data-lang="en">Certifications</h2>
+      <h2 data-lang="fi"> Sertifikaatit</h2>
       <div class="row align-items-center">
         <div class="col-md-6 mb-3 text-center">
           <a href=""></a>
@@ -162,10 +258,13 @@
     <section class="section">
       <div class="d-flex justify-content-center">
         <div class="m-3">
-          <a href="philosophy.html" class="btn btn-outline-dark">Learn more about my design philosophy</a>
+          <a href="philosophy.html" data-lang="en" class="btn btn-outline-dark">Learn more about my design
+            philosophy</a>
+          <a href="philosophy.html" data-lang="fi" class="btn btn-outline-dark">Lue lisää kehitysfilosofiastani</a>
         </div>
         <div class="m-3">
-          <a href="projects.html" class="btn btn-outline-dark">See my projects</a>
+          <a href="projects.html" data-lang="en" class="btn btn-outline-dark">See my projects</a>
+          <a href="projects.html" data-lang="fi" class="btn btn-outline-dark">Projektiportfolio</a>
         </div>
       </div>
     </section>
@@ -175,6 +274,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
+  <script src="language.js"></script>
   </div>
 
 </body>
