@@ -58,6 +58,46 @@
       <p class="lead" data-lang="fi">Tässä on esiteltynä joitain projektejani, jotka ovat kokonaan omaa kädenjälkeäni
       </p>
     </header>
+<section class="section">
+  <h2>🧾 Snipper – Physical-First Internal Reporting (Concept)</h2>
+
+  <p>
+    A physical-first internal reporting system for environments where operational
+    observations happen on the floor, not behind a screen. Built to capture
+    low-friction, real-world signals and turn them into immediate, visible work items
+    without apps, logins, or integrations.
+  </p>
+
+  <p><strong>Features</strong></p>
+  <ul>
+    <li>QR-based reporting tied to real-world assets and locations</li>
+    <li>Login-free, mobile web input with free-text messages</li>
+    <li>Deterministic routing from asset to responsible workstation</li>
+    <li>Instant physical output via IoT receipt printer (~10s)</li>
+    <li>Asset-level message history and traceability</li>
+    <li>Firmware updates via IoT Hub</li>
+  </ul>
+
+  <p><strong>Tech stack</strong></p>
+  <ul>
+    <li><strong>Frontend:</strong> Mobile-first web UI (preact) </li>
+    <li><strong>Backend:</strong> .NET Core (IoT Hub)</li>
+    <li><strong>Devices:</strong> SIM-connected IoT receipt printers (plug-and-play module)</li>
+    <li><strong>Data:</strong> Azure SQL</li>
+    <li><strong>Infra:</strong> Cloud backend + cellular IoT, zero on-site IT</li>
+  </ul>
+
+  <p>
+    Snipper is intentionally not a ticketing system or task manager.
+    It functions as a <strong>pre-system observation layer</strong> —
+    ensuring small but critical issues are surfaced, visible, and actionable
+    before escalation.
+  </p>
+
+  <p><i>Concept product – pilot-driven hardware + software service</i></p>
+</section>
+
+
 
     <section class="section">
       <h2>📦 qrpalaute.fi &ndash; QR Feedback System</h2>
@@ -69,7 +109,7 @@
       <ul>
         <li><strong>Frontend:</strong> .NET Razor Pages, Bootstrap, jQuery </li>
         <li><strong>Backend:</strong> .NET Core, Azure Functions </li>
-        <li><strong>Infra:</strong> App Service, Function Apps, Cosmos DB, CI/CD pipelines, Bicep Automation, Azure Artefacts</li>
+        <li><strong>Infra:</strong> App Service, Function Apps, Cosmos DB, Service Bus, CI/CD pipelines, Bicep infra-as-code, Azure Artefacts</li>
       </ul>
       <!--
         <img src="images/qr-architecture.png" alt="QR System Architecture Diagram" class="img-fluid border my-3">
