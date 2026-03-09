@@ -8,6 +8,6 @@ function switchLang(lang) {
 
 // Load saved language on page load
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('preferredLang') || 'en';
+    const savedLang = localStorage.getItem('preferredLang') || 'fi';
     switchLang(savedLang);
 });
